@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#ganeshInput{
+			color: orange;
+		}
+		#username{
+			background-color: thistle;  
+		}
+	</style>
+	<script type="text/javascript">
+		function user(){
+			var userName=document.getElementById("username").value
+			document.getElementById("ganeshInput").innerHTML=userName
+			/*var textData=document.getElementsByClassName("para")
+			console.log(textData.length)
+			for(var i=0;i<textData.length;i++){
+				console.log(textData[i].innerHTML)
+			}
+			var listOfUl=document.getElementsByTagName("li")
+			for(var d=0;d<listOfUl.length;d++){
+				console.log(listOfUl[d].innerHTML)
+			}*/
+		} 
+	</script>
+</head>
+<body>
+	<input id="username"/>
+	<h1>Name :<span id="ganeshInput"></span></h1>
+	<!-- <p class="para">HOW R U BABY</p>
+	<p class="para">I AM FINE DARLING</p>
+	<h1 class="para">when will be our first meet</h1>
+	<ul>
+		<li>APPLE</li>
+		<li>MANGO</li>
+		<li>GUAVA</li>
+		<li>BANANA</li>
+		<li>GRAPES</li>
+		<li>ORANGE</li>
+	</ul> -->
+
+	<button onclick="user()">submit</button>
+</body>
+</html>
